@@ -61,24 +61,7 @@ function loadRecords() {
   }
 
   const seed = [
-    {
-      id: "EXC-DEMO-1001", status: "Draft", lastStep: 1,
-      created: "2026-11-05", country: "France", institution: "Université de Lyon",
-      studentFirstName: "Jamie", studentLastName: "Taylor", studentEmail: "jamie@example.edu",
-      nominatorFirstName: DEMO_NOMINATOR.firstName,
-      nominatorLastName: DEMO_NOMINATOR.lastName,
-      nominatorEmail: DEMO_NOMINATOR.email
-    },
-    {
-      id: "EXC-DEMO-1000", status: "Submitted", lastStep: 4,
-      created: "2026-11-03", country: "Germany", institution: "Universität Hamburg",
-      studentFirstName: "Robin", studentLastName: "Lee", studentEmail: "robin@example.edu",
-      majorSubject: "Engineering", degree: "Undergraduate", year: "Year 2", period: "One semester",
-      nominatorFirstName: DEMO_NOMINATOR.firstName,
-      nominatorLastName: DEMO_NOMINATOR.lastName,
-      nominatorEmail: DEMO_NOMINATOR.email, transcriptEmail: "exchange@example.edu",
-      declaration: "Yes", signedBy: "Alex Morgan"
-    }
+   
   ];
   localStorage.setItem(STORAGE_KEY, JSON.stringify(seed));
   return seed;
